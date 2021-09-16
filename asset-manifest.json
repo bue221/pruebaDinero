@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/pruebaDinero/static/js/main.4b4e824f.chunk.js",
+    "main.js.map": "/pruebaDinero/static/js/main.4b4e824f.chunk.js.map",
+    "runtime-main.js": "/pruebaDinero/static/js/runtime-main.a8b6eada.js",
+    "runtime-main.js.map": "/pruebaDinero/static/js/runtime-main.a8b6eada.js.map",
+    "static/js/2.e6aea061.chunk.js": "/pruebaDinero/static/js/2.e6aea061.chunk.js",
+    "static/js/2.e6aea061.chunk.js.map": "/pruebaDinero/static/js/2.e6aea061.chunk.js.map",
+    "static/js/3.7f94e3ac.chunk.js": "/pruebaDinero/static/js/3.7f94e3ac.chunk.js",
+    "static/js/3.7f94e3ac.chunk.js.map": "/pruebaDinero/static/js/3.7f94e3ac.chunk.js.map",
+    "index.html": "/pruebaDinero/index.html",
+    "static/js/2.e6aea061.chunk.js.LICENSE.txt": "/pruebaDinero/static/js/2.e6aea061.chunk.js.LICENSE.txt",
+    "static/media/1.64acb923.png": "/pruebaDinero/static/media/1.64acb923.png",
+    "static/media/2.553a26fd.png": "/pruebaDinero/static/media/2.553a26fd.png",
+    "static/media/3.471dc4b8.png": "/pruebaDinero/static/media/3.471dc4b8.png",
+    "static/media/logo.ceb91a62.svg": "/pruebaDinero/static/media/logo.ceb91a62.svg",
+    "static/media/modal.3d9d2dc0.png": "/pruebaDinero/static/media/modal.3d9d2dc0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a8b6eada.js",
+    "static/js/2.e6aea061.chunk.js",
+    "static/js/main.4b4e824f.chunk.js"
+  ]
+}
