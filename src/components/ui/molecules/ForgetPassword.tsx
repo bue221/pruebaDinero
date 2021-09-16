@@ -10,8 +10,10 @@ import {
   Flex,
   Image,
   ModalCloseButton,
+  FormControl,
 } from "@chakra-ui/react";
 import React from "react";
+import { useForm } from "react-hook-form";
 
 import background from "../../../assets/modal.png";
 
@@ -27,14 +29,28 @@ function ForgetPasswordModal() {
     };
   }, [isOpen]);
 
+  const { handleSubmit, register, watch } = useForm();
+
+  const onSubmit = (data: any) => {
+    alert(JSON.stringify(data, null, 2));
+  };
+
   const [email, setEmail] = React.useState("");
   const handleChange = (e: any) => {
     setEmail(e.target.value);
     console.log(email);
   };
 
+  // console.log(watch("email"));
+
   const RecoverPasswordForm = () => (
-    <>
+    <FormControl
+      onSubmit={handleSubmit(onSubmit)}
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      flexDir="column"
+    >
       <Text
         color="#7c4dff"
         fontWeight="bold"
@@ -45,8 +61,7 @@ function ForgetPasswordModal() {
         Por favor ingresa tu correo electrónico
       </Text>
       <Input
-        value={email}
-        onChange={handleChange}
+        {...register("email")}
         w="70%"
         mt={12}
         mb={4}
@@ -56,9 +71,10 @@ function ForgetPasswordModal() {
         size="lg"
       />
       <Button
-        disabled={email === ""}
+        disabled={watch("email") === ""}
         bg="#7c4dff"
         color="white"
+        type="submit"
         onClick={() => {
           setSendEmail(true);
           setRecover(false);
@@ -68,7 +84,7 @@ function ForgetPasswordModal() {
       >
         Enviar correo
       </Button>
-    </>
+    </FormControl>
   );
 
   const ConfirmSendEmail = () => (

@@ -20,6 +20,7 @@ import React from "react";
 import img1 from "../../../assets/1.png";
 import img2 from "../../../assets/2.png";
 import img3 from "../../../assets/3.png";
+import InputField from "../../ui/atoms/InputField";
 
 const TEST_SITE_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
 
@@ -174,13 +175,8 @@ const LoginPage = () => {
             Ingresa tus credenciales para acceder a la plataforma.
           </Text>
           <Stack mt={9}>
-            <Input
-              errorBorderColor="red.300"
-              color="#7c4dff"
-              placeholder="Ingresa tu usuario"
-              size="lg"
-            />
-            <PasswordInput />
+            <InputField isInvalid />
+            <PasswordInput isInvalid />
           </Stack>
           <ForgetPasswordModal />
           <Box mb={8}>
